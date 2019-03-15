@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+        /* Навигационное меню */
+
+header {
+    width: 1202px;
+    margin: auto;
+    margin-bottom: 96px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+
+            /* Что бы спозиционировать list-item я для их блока-обертки
+            отдельно задаю ширину и свойство display:flex; */
+
+
+.navigation-menu {
+    width: 492px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #95e1d3;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: #95e1d3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 0;
+}
+
+.list-item a:hover {
+    color: #f48989;
+    border-bottom: 3px solid #f48989;
+}
+
+
+
+            /* Тут начинается верстка main */
+
+main {
+    width: 1202px;
+    margin: 0 auto;
+}
+
+.headline1 {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.headline2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 112px;
+}
+
+.headline2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    display: block;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+
+            /* Ниже начинается верстка и позиционирование 
+            блоков amazing services */
+
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    width: 265px;
+    margin-bottom: 100px;
+}
+
+.container:not(:nth-child(3n)) {
+    margin-right: 144px;
+}
+
+.headline3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+}
+
+
+
+      /* А теперь я перехожу к псевдоэлементам для .container */
+
+
+.container::before {
+    content: url(/img/Безимени-1.png);
+    margin-right: 22px ;
+}
