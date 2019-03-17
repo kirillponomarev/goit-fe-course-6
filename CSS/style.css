@@ -211,4 +211,89 @@ main {
     color: #999999;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    margin-bottom: 92px;
 }
+
+
+
+        /* Позиционирование и стилизация section "team" */
+
+
+         .teamphoto {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 84px;
+        }
+        
+        .image {
+            width: 380px;
+            background: url(/img/teamphoto/graphic-design.jpg);
+            margin-bottom: 30px;
+            transition: all 200ms linear;
+        }
+
+        .imageUX {
+            background: url(/img/teamphoto/UX-design.jpg);
+        }
+
+        .imageWEB {
+            background: url(/img/teamphoto/web-developer.jpg);
+        }
+
+        .Memberteam {
+            max-width: 380px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .Memberteam:hover .image {
+            transform: translate(-10px, -10px);
+            box-shadow: 10px 10px 0px 0px #95e1d3;
+        }
+        
+        .innertwo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 380px;
+            height: 468px;
+            background: linear-gradient(to bottom, rgba(238, 137, 138, 0.8), rgba(240, 217, 137, 0.8));
+            opacity: 0;
+        }
+        
+        .Memberteam:hover .innertwo {
+            opacity: 1;
+        }
+        
+        .spisok {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            max-height: 468px;
+        }
+        
+        .list-item2 {
+            background-color: #fce38a;
+            border: 1px solid #f9bd87;
+            transition: all 200ms linear;
+        }
+        
+        .list-item2:hover {
+            background-color: #95e1d3;
+        }
+        
+        .name {
+            font-size: 14px;
+            margin-bottom: 16px;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .description {
+            font-size: 15px;
+            color: #b3b3b3;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300i;
+        }
