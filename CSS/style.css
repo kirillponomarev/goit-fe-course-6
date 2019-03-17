@@ -178,27 +178,27 @@ main {
 }
 
 .one::before {
-    content: url(../img/before1.png);
+    content: url(./img/before1.png);
 }
 
 .two::before {
-    content: url(../img/before2.png);
+    content: url(./img/before2.png);
 }
 
 .three::before {
-    content: url(../img/before3.png);
+    content: url(./img/before3.png);
 }
 
 .four::before {
-    content: url(../img/before4.png);
+    content: url(./img/before4.png);
 }
 
 .five::before {
-    content: url(../img/before5.png);
+    content: url(./img/before5.png);
 }
 
 .six::before {
-    content: url(../img/before6.png);
+    content: url(./img/before6.png);
 }
 
 
@@ -249,15 +249,15 @@ main {
 }
 
 .imageDesg {
-    background: url(../img/teamphoto/graphic-design.jpg);
+    background: url(./img/teamphoto/graphic-design.jpg);
 }
 
 .imageUX {
-    background: url(../img/teamphoto/UX-design.jpg);
+    background: url(./img/teamphoto/UX-design.jpg);
 }
 
 .imageWEB {
-    background: url(../img/teamphoto/web-developer.jpg);
+    background: url(./img/teamphoto/web-developer.jpg);
 }
         
 .innertwo {
